@@ -1,0 +1,98 @@
+Starting up command './mysort 1GB.txt sort.txt 1 >> mysort1GB.log' and attaching to process
+Process finished (17.40 seconds)
+mysort 1GB 1 finished.
+Starting up command './mysort 1GB.txt sort.txt 4 >> mysort1GB.log' and attaching to process
+Process finished (18.37 seconds)
+mysort 1GB 4 finished.
+Starting up command './mysort 1GB.txt sort.txt 8 >> mysort1GB.log' and attaching to process
+Process finished (17.33 seconds)
+mysort 1GB 8 finished.
+Starting up command './mysort 1GB.txt sort.txt 16 >> mysort1GB.log' and attaching to process
+Process finished (17.35 seconds)
+mysort 1GB 16 finished.
+Starting up command './mysort 4GB.txt sort.txt 1 >> mysort4GB.log' and attaching to process
+Process finished (69.20 seconds)
+mysort 4GB 1 finished.
+Starting up command './mysort 4GB.txt sort.txt 4 >> mysort4GB.log' and attaching to process
+Process finished (69.08 seconds)
+mysort 4GB 4 finished.
+Starting up command './mysort 4GB.txt sort.txt 8 >> mysort4GB.log' and attaching to process
+Process finished (69.31 seconds)
+mysort 4GB 8 finished.
+Starting up command './mysort 4GB.txt sort.txt 16 >> mysort4GB.log' and attaching to process
+Process finished (68.35 seconds)
+mysort 4GB 16 finished.
+Starting up command './mysort 16GB.txt sort.txt 4 >> mysort16GB.log' and attaching to process
+Process finished (352.75 seconds)
+mysort 16GB 4 finished.
+Starting up command './mysort 16GB.txt sort.txt 8 >> mysort16GB.log' and attaching to process
+Process finished (200.20 seconds)
+mysort 16GB 8 finished.
+Starting up command './mysort 16GB.txt sort.txt 24 >> mysort16GB.log' and attaching to process
+Process finished (201.16 seconds)
+mysort 16GB 24 finished.
+Starting up command './mysort 64GB.txt sort.txt 4 >> mysort64GB.log' and attaching to process
+Process finished (4733.78 seconds)
+mysort 64GB 4 finished.
+Starting up command './mysort 64GB.txt sort.txt 8 >> mysort64GB.log' and attaching to process
+Process finished (4151.69 seconds)
+mysort 64GB 8 finished.
+Starting up command './mysort 64GB.txt sort.txt 16 >> mysort64GB.log' and attaching to process
+Process finished (4076.26 seconds)
+mysort 64GB 16 finished.
+Starting up command './mysort 64GB.txt sort.txt 24 >> mysort64GB.log' and attaching to process
+Process finished (4102.65 seconds)
+mysort 64GB 24 finished.
+16.08user 2.91system 0:48.69elapsed 39%CPU (0avgtext+0avgdata 1447236maxresident)k
+1953112inputs+1953128outputs (1major+361427minor)pagefaults 0swaps
+Starting up command 'time sort -k 1 1GB.txt -o sort.txt --parallel=1 >> linux-sort1GB.log' and attaching to process
+Process finished (47.20 seconds)
+18.00user 2.41system 0:23.42elapsed 87%CPU (0avgtext+0avgdata 1916164maxresident)k
+0inputs+1953128outputs (0major+722798minor)pagefaults 0swaps
+Starting up command 'time sort -k 1 1GB.txt -o sort.txt --parallel=4 >> linux-sort1GB.log' and attaching to process
+Process finished (23.53 seconds)
+19.43user 2.90system 0:23.20elapsed 96%CPU (0avgtext+0avgdata 2228848maxresident)k
+0inputs+1953128outputs (0major+800985minor)pagefaults 0swaps
+Starting up command 'time sort -k 1 1GB.txt -o sort.txt --parallel=8 >> linux-sort1GB.log' and attaching to process
+Process finished (23.55 seconds)
+21.34user 3.35system 0:21.59elapsed 114%CPU (0avgtext+0avgdata 2541416maxresident)k
+0inputs+1953128outputs (0major+800422minor)pagefaults 0swaps
+Starting up command 'time sort -k 1 1GB.txt -o sort.txt --parallel=16 >> linux-sort1GB.log' and attaching to process
+Process finished (22.46 seconds)
+77.40user 10.48system 4:03.20elapsed 36%CPU (0avgtext+0avgdata 5783248maxresident)k
+7812432inputs+7812504outputs (0major+1445414minor)pagefaults 0swaps
+Starting up command 'time sort -k 1 4GB.txt -o sort.txt --parallel=1 >> linux-sort4GB.log' and attaching to process
+Process finished (243.46 seconds)
+86.09user 7.97system 2:42.23elapsed 57%CPU (0avgtext+0avgdata 7658584maxresident)k
+0inputs+7812504outputs (0major+1936461minor)pagefaults 0swaps
+Starting up command 'time sort -k 1 4GB.txt -o sort.txt --parallel=4 >> linux-sort4GB.log' and attaching to process
+Process finished (163.10 seconds)
+94.83user 9.26system 2:32.05elapsed 68%CPU (0avgtext+0avgdata 8908628maxresident)k
+0inputs+7812504outputs (0major+2226701minor)pagefaults 0swaps
+Starting up command 'time sort -k 1 4GB.txt -o sort.txt --parallel=8 >> linux-sort4GB.log' and attaching to process
+Process finished (153.00 seconds)
+106.20user 10.25system 2:33.23elapsed 76%CPU (0avgtext+0avgdata 10158612maxresident)k
+0inputs+7812504outputs (0major+2539246minor)pagefaults 0swaps
+Starting up command 'time sort -k 1 4GB.txt -o sort.txt --parallel=16 >> linux-sort4GB.log' and attaching to process
+Process finished (154.07 seconds)
+Requested activities not available
+mysort 64GB 4 with diskio finished.
+Requested activities not available
+mysort 64GB 8 with diskio finished.
+Requested activities not available
+mysort 64GB 16 with diskio finished.
+Requested activities not available
+mysort 64GB 24 with diskio finished.
+open to read [tmp_0] failedopen to read [tmp_1] failedopen to read [tmp_2] failedopen to read [tmp_3] failedopen to read [tmp_4] failedopen to read [tmp_5] failedopen to read [tmp_6] failedopen to read [tmp_7] failedopen to read [tmp_8] failedopen to read [tmp_9] failedopen to read [tmp_10] failedopen to read [tmp_11] failedopen to read [tmp_16] failedopen to read [tmp_17] failedopen to read [tmp_18] failedopen to read [tmp_19] failedopen to read [tmp_20] failedopen to read [tmp_21] failedopen to read [tmp_22] failedopen to read [tmp_23] failedopen to read [tmp_24] failedopen to read [tmp_25] failedopen to read [tmp_26] failedopen to read [tmp_35] failedopen to read [tmp_36] failedopen to read [tmp_37] failedopen to read [tmp_38] failedopen to read [tmp_39] failedopen to read [tmp_40] failedopen to read [tmp_41] failedopen to read [tmp_42] failedopen to read [tmp_43] failedopen to read [tmp_44] failedopen to read [tmp_45] failedopen to read [tmp_46] failedopen to read [tmp_47] failedopen to read [tmp_48] failedopen to read [tmp_49] failedopen to read [tmp_50] failedopen to read [tmp_51] failedopen to read [tmp_52] failedopen to read [tmp_53] failedopen to read [tmp_54] failedopen to read [tmp_55] failedopen to read [tmp_56] failedopen to read [tmp_57] failedopen to read [tmp_58] failedopen to read [tmp_59] failedopen to read [tmp_60] failedopen to read [tmp_61] failedopen to read [tmp_62] failedopen to read [tmp_63] failedopen to read [tmp_64] failedopen to read [tmp_65] failedopen to read [tmp_66] failedopen to read [tmp_67] failedopen to read [tmp_68] failedopen to read [tmp_69] failedopen to read [tmp_70] failedopen to read [tmp_71] failedopen to read [tmp_72] failedopen to read [tmp_73] failedopen to read [tmp_74] failedopen to read [tmp_75] failedopen to read [tmp_76] failedopen to read [tmp_77] failedopen to read [tmp_78] failedopen to read [tmp_79] failedopen to read [tmp_80] failedopen to read [tmp_81] failedopen to read [tmp_82] failedopen to read [tmp_83] failedopen to read [tmp_84] failedopen to read [tmp_85] failedopen to read [tmp_86] failedopen to read [tmp_87] failedopen to read [tmp_88] failedopen to read [tmp_89] failedopen to read [tmp_90] failedopen to read [tmp_91] failedopen to read [tmp_92] failedopen to read [tmp_93] failedopen to read [tmp_94] failedopen to read [tmp_95] failedopen to read [tmp_96] failedopen to read [tmp_97] failedopen to read [tmp_98] failedopen to read [tmp_99] failedopen to read [tmp_100] failedopen to read [tmp_101] failedopen to read [tmp_102] failedopen to read [tmp_127] failedopen to read [tmp_128] failedopen to read [tmp_129] failedopen to read [tmp_130] failedopen to read [tmp_131] failedopen to read [tmp_132] failedopen to read [tmp_133] failedopen to read [tmp_134] failedopen to read [tmp_135] failedopen to read [tmp_136] failedopen to read [tmp_137] failedopen to read [tmp_138] failedopen to read [tmp_139] failedopen to read [tmp_140] failedopen to read [tmp_141] failedopen to read [tmp_142] failedopen to read [tmp_143] failedopen to read [tmp_144] failedopen to read [tmp_145] failedopen to read [tmp_146] failedopen to read [tmp_147] failedopen to read [tmp_148] failedopen to read [tmp_149] failedopen to read [tmp_150] failedopen to read [tmp_151] failedopen to read [tmp_152] failedopen to read [tmp_153] failedopen to read [tmp_154] failedopen to read [tmp_155] failedopen to read [tmp_156] failedopen to read [tmp_157] failedopen to read [tmp_158] failedopen to read [tmp_159] failedopen to read [tmp_160] failedopen to read [tmp_161] failedopen to read [tmp_162] failedopen to read [tmp_163] failedopen to read [tmp_164] failedopen to read [tmp_165] failedopen to read [tmp_166] failedopen to read [tmp_167] failedopen to read [tmp_168] failedopen to read [tmp_169] failedopen to read [tmp_170] failedopen to read [tmp_171] failedSegmentation fault (core dumped)
+open to read [tmp_0] failedopen to read [tmp_1] failedopen to read [tmp_2] failedopen to read [tmp_3] failedopen to read [tmp_4] failedopen to read [tmp_5] failedopen to read [tmp_6] failedopen to read [tmp_7] failedopen to read [tmp_8] failedopen to read [tmp_9] failedopen to read [tmp_10] failedopen to read [tmp_11] failedopen to read [tmp_16] failedopen to read [tmp_17] failedopen to read [tmp_18] failedopen to read [tmp_19] failedopen to read [tmp_20] failedopen to read [tmp_21] failedopen to read [tmp_22] failedopen to read [tmp_23] failedopen to read [tmp_24] failedopen to read [tmp_25] failedopen to read [tmp_26] failedopen to read [tmp_36] failedopen to read [tmp_37] failedopen to read [tmp_38] failedopen to read [tmp_39] failedopen to read [tmp_40] failedopen to read [tmp_41] failedopen to read [tmp_42] failedopen to read [tmp_43] failedopen to read [tmp_44] failedopen to read [tmp_45] failedopen to read [tmp_46] failedopen to read [tmp_47] failedopen to read [tmp_48] failedopen to read [tmp_49] failedopen to read [tmp_50] failedopen to read [tmp_51] failedopen to read [tmp_52] failedopen to read [tmp_53] failedopen to read [tmp_54] failedopen to read [tmp_55] failedopen to read [tmp_56] failedopen to read [tmp_57] failedopen to read [tmp_58] failedopen to read [tmp_59] failedopen to read [tmp_60] failedopen to read [tmp_61] failedopen to read [tmp_62] failedopen to read [tmp_63] failedopen to read [tmp_64] failedopen to read [tmp_65] failedopen to read [tmp_66] failedopen to read [tmp_67] failedopen to read [tmp_68] failedopen to read [tmp_69] failedopen to read [tmp_70] failedopen to read [tmp_71] failedopen to read [tmp_72] failedopen to read [tmp_73] failedopen to read [tmp_74] failedopen to read [tmp_75] failedopen to read [tmp_76] failedopen to read [tmp_77] failedopen to read [tmp_78] failedopen to read [tmp_79] failedopen to read [tmp_80] failedopen to read [tmp_81] failedopen to read [tmp_82] failedopen to read [tmp_83] failedopen to read [tmp_84] failedopen to read [tmp_85] failedopen to read [tmp_86] failedopen to read [tmp_87] failedopen to read [tmp_88] failedopen to read [tmp_89] failedopen to read [tmp_90] failedopen to read [tmp_91] failedopen to read [tmp_92] failedopen to read [tmp_93] failedopen to read [tmp_94] failedopen to read [tmp_95] failedopen to read [tmp_96] failedopen to read [tmp_97] failedopen to read [tmp_98] failedopen to read [tmp_99] failedopen to read [tmp_100] failedopen to read [tmp_101] failedopen to read [tmp_102] failedSegmentation fault (core dumped)
+open to read [tmp_4] failedopen to read [tmp_5] failedopen to read [tmp_6] failedopen to read [tmp_7] failedopen to read [tmp_8] failedopen to read [tmp_9] failedopen to read [tmp_10] failedopen to read [tmp_11] failedopen to read [tmp_12] failedopen to read [tmp_13] failedopen to read [tmp_14] failedopen to read [tmp_15] failedopen to read [tmp_16] failedopen to read [tmp_17] failedopen to read [tmp_18] failedopen to read [tmp_19] failedopen to read [tmp_20] failedopen to read [tmp_21] failedopen to read [tmp_22] failedopen to read [tmp_23] failedopen to read [tmp_24] failedopen to read [tmp_25] failedopen to read [tmp_26] failedopen to read [tmp_27] failedopen to read [tmp_28] failedopen to read [tmp_29] failedopen to read [tmp_30] failedopen to read [tmp_31] failedopen to read [tmp_32] failedopen to read [tmp_33] failedopen to read [tmp_34] failedopen to read [tmp_35] failedopen to read [tmp_36] failedopen to read [tmp_37] failedopen to read [tmp_38] failedopen to read [tmp_39] failedopen to read [tmp_40] failedopen to read [tmp_41] failedopen to read [tmp_42] failedopen to read [tmp_43] failedopen to read [tmp_44] failedopen to read [tmp_45] failedopen to read [tmp_46] failedopen to read [tmp_47] failedopen to read [tmp_48] failedopen to read [tmp_49] failedopen to read [tmp_50] failedopen to read [tmp_51] failedopen to read [tmp_52] failedopen to read [tmp_53] failedopen to read [tmp_54] failedopen to read [tmp_55] failedopen to read [tmp_56] failedopen to read [tmp_57] failedopen to read [tmp_58] failedSegmentation fault (core dumped)
+Killed
+mysort 64GB 4 with diskio finished.
+open to read [tmp_16] failedopen to read [tmp_17] failedopen to read [tmp_18] failedopen to read [tmp_19] failedopen to read [tmp_20] failedopen to read [tmp_21] failedopen to read [tmp_22] failedopen to read [tmp_23] failedopen to read [tmp_24] failedopen to read [tmp_25] failedopen to read [tmp_26] failedopen to read [tmp_27] failedopen to read [tmp_28] failedSegmentation fault (core dumped)
+mysort 64GB 8 with diskio finished.
+mysort 64GB 16 with diskio finished.
+mysort 64GB 4 with diskio finished.
+mysort 64GB 24 with diskio finished.
+open to read [tmp_0] failedopen to read [tmp_1] failedopen to read [tmp_2] failedopen to read [tmp_3] failedopen to read [tmp_4] failedopen to read [tmp_5] failedopen to read [tmp_6] failedopen to read [tmp_7] failedopen to read [tmp_8] failedopen to read [tmp_9] failedopen to read [tmp_10] failedopen to read [tmp_11] failedopen to read [tmp_12] failedopen to read [tmp_13] failedopen to read [tmp_14] failedopen to read [tmp_15] failedopen to read [tmp_16] failedopen to read [tmp_17] failedopen to read [tmp_18] failedopen to read [tmp_19] failedopen to read [tmp_20] failedopen to read [tmp_21] failedopen to read [tmp_22] failedopen to read [tmp_23] failedopen to read [tmp_24] failedopen to read [tmp_25] failedopen to read [tmp_26] failedopen to read [tmp_27] failedopen to read [tmp_28] failedopen to read [tmp_29] failedopen to read [tmp_30] failedopen to read [tmp_31] failedopen to read [tmp_32] failedopen to read [tmp_33] failedopen to read [tmp_34] failedopen to read [tmp_35] failedopen to read [tmp_36] failedopen to read [tmp_37] failedopen to read [tmp_38] failedopen to read [tmp_39] failedopen to read [tmp_40] failedopen to read [tmp_41] failedopen to read [tmp_42] failedopen to read [tmp_43] failedopen to read [tmp_44] failedopen to read [tmp_45] failedopen to read [tmp_46] failedopen to read [tmp_47] failedopen to read [tmp_48] failedopen to read [tmp_49] failedopen to read [tmp_50] failedopen to read [tmp_51] failedopen to read [tmp_52] failedopen to read [tmp_53] failedopen to read [tmp_54] failedopen to read [tmp_55] failedopen to read [tmp_56] failedmysort 64GB 8 with diskio finished.
+mysort 64GB 16 with diskio finished.
+mysort 64GB 24 with diskio finished.
