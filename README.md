@@ -1,4 +1,4 @@
-## CS 553 Cloud Computing PA 3
+## CS 553 Cloud Computing PA3
 
 ### Team members:
  - Ali Guzelyel, A20454373
@@ -40,7 +40,45 @@ We established the right algorithms to turn internal quicksort into an external 
  - To run only one sorting command, run ```./mysort input_file output_file num_threads```
  - To use linux sort and time it, run ```time sort input_file -o output_file --parallel=num_threads```
  - To check accuracy of the sorting algorithms, run ```./valsort input_file```
+ - To run any of the code in the background add '&' to the end, run ```command args &```
 
 
 ### Notes
- - Running the valsort command on linux sort does not give accurate results. However, we can just assume that the linux sort is OK. The 
+ - Running the valsort command on linux sort does not give accurate results. However, we can just assume that the linux sort is OK. The job here is to test if mysort is successful in sorting.
+ - While running the tests, Chameleon instance server went down, so we lost the data. So while re-running the tests, we redacted the tests that took too much time.
+
+### Resources Used
+
+#### Libraries
+ - stdio.h
+ - stdlib.h
+ - sys/time.h
+ - sys/stat.h
+ - unistd.h
+ - pthread.h
+ - math.h
+ - stdbool.h
+ - string.h
+
+#### External Sort
+ - Definition https://en.wikipedia.org/wiki/External_sorting
+
+#### gensort / valsort
+ - Gensort and Valsort Documentation http://www.ordinal.com/gensort.html
+
+#### linux sort
+ -  Linux Sort Documentation http://man7.org/linux/man-pages/man1/sort.1.html
+
+#### psrecord
+ - Psrecord Documentation https://pypi.org/project/psrecord/
+ - Installing psrecord on Linux https://unix.stackexchange.com/questions/554/how-to-monitor-cpu-memory-usage-of-a-single-process
+ - Hotfix for pip install package_name, (including path to $PATH) https://askubuntu.com/questions/900312/pip-install-saws-command-not-found
+
+#### Chameleon Connect, Setup
+ - Chameleon Documentation https://chameleoncloud.readthedocs.io/en/latest/technical/reservations.html
+ - Chameleon Hardware https://chameleoncloud.org/hardware/
+ - Further Chameleon Tutorial https://github.com/grc-iit/scs-tutorial/wiki/8.-Chameleon-Cloud
+ - Connecting to Github from remote server https://stackoverflow.com/questions/68775869/message-support-for-password-authentication-was-removed
+
+#### Additional Coding tips
+ - Removing files starting with "_name_", run ```find  . -name 'name*' -exec rm {} \;``` https://superuser.com/questions/482435/how-to-remove-all-files-starting-with-a-certain-string-in-linux

@@ -9,7 +9,7 @@
 #include <string.h>
 
 #define MSG "./mysort <file input> <file output> <num_threads>"
-#define MEMORY_LIMIT 4000000000
+#define MEMORY_LIMIT 8000000000
 #define BUFFER_SIZE 100
 
 typedef struct thread_task {
