@@ -1,0 +1,6 @@
+linux sort 64GB 16 threads
+Starting up command 'time sort -k 1 -S 8G 64GB.txt -o sort.txt --parallel=16 >> linux-sort64GB.log' and attaching to process
+Process finished (4876.41 seconds)
+linux sort 64GB 24 threads
+Starting up command 'time sort -k 1 -S 8G 64GB.txt -o sort.txt --parallel=24 >> linux-sort64GB.log' and attaching to process
+Process finished (4428.30 seconds)

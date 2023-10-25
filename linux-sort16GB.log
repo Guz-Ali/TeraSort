@@ -1,0 +1,7 @@
+linux sort 16GB 8 threads
+Starting up command 'time sort -k 1 -S 8G 16GB.txt -o sort.txt --parallel=8 >> linux-sort16GB.log' and attaching to process
+Process finished (926.35 seconds)
+
+linux sort 16GB 24 threads
+Starting up command 'time sort -k 1 -S 8G 16GB.txt -o sort.txt --parallel=24 >> linux-sort16GB.log' and attaching to process
+Process finished (708.96 seconds)
