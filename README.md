@@ -15,11 +15,13 @@ This is when the sorting algorithms can be achieved inside memory, since the dat
 
 ### External Sort:
 
-This is when the sorting algorithms cannot be achieved inside the memory, since the data is much larger than the memory available. (ex. 8 gb memory, 64 gb data)
+This is when the sorting algorithms cannot be achieved inside the memory, since the data is much larger than the memory available. (ex. 8 gb memory, 64 gb data). 
 
 ### What we did
 
-We established the right algorithms to turn internal quicksort into an external quicksort algorithm. By doing so, we were able to work on data that were larger than the memory available.
+We established the right algorithms to turn internal quicksort into an external quicksort algorithm. By doing so, we were able to work on data that were larger than the memory available. We are actually running the test cases with a server node that has 128 GB memory, but to simulate '8 GB mem vs 64 GB data', we are limiting the memory usage to 8 GB. 
+
+In addition, we are also analyzing the cpu and memory usage, and disk i/o by comparing it to linux-sort results.
  
 ### Files
  - mysort.c
@@ -32,6 +34,7 @@ We established the right algorithms to turn internal quicksort into an external 
  - The folder comes with gensort and valsort for Linux. If you need to see more information on these, please visit: http://www.ordinal.com/gensort.html
  - For CPU and memory utilization analsis, check out 'psrecord' this page: https://github.com/astrofrog/psrecord . You might need to install some packages to do a in-depth analysis.
  - Since we are testing external sort with large files, large storage capacity is needed. (min 128 GB to test out sorting 64GB data)
+ - Other required packages: psrecord, python-matplotlib, python-tk, sysstat
 
 ### How to run code
  - First do makefile ```make```
@@ -74,11 +77,16 @@ We established the right algorithms to turn internal quicksort into an external 
  - Installing psrecord on Linux https://unix.stackexchange.com/questions/554/how-to-monitor-cpu-memory-usage-of-a-single-process
  - Hotfix for pip install package_name, (including path to $PATH) https://askubuntu.com/questions/900312/pip-install-saws-command-not-found
 
-#### Chameleon Connect, Setup
+#### nohup
+ - Since we have a task that is going to run for a long while, it's better to take some precaution (learned the hard way) so that the tasks complete without errors, like ssh timeout, broken pipe etc. To run command in the background with nohup, run ```nohup <command> &```
+ - nohup Documentation https://www.digitalocean.com/community/tutorials/nohup-command-in-linux
+ - Further resource on independent tasks https://superuser.com/questions/513496/how-can-i-run-a-command-from-the-terminal-without-blocking-it
+
+#### Chameleon Lease, Instance, Setup, Connect
  - Chameleon Documentation https://chameleoncloud.readthedocs.io/en/latest/technical/reservations.html
  - Chameleon Hardware https://chameleoncloud.org/hardware/
  - Further Chameleon Tutorial https://github.com/grc-iit/scs-tutorial/wiki/8.-Chameleon-Cloud
  - Connecting to Github from remote server https://stackoverflow.com/questions/68775869/message-support-for-password-authentication-was-removed
 
 #### Additional Coding tips
- - Removing files starting with "_name_", run ```find  . -name 'name*' -exec rm {} \;``` https://superuser.com/questions/482435/how-to-remove-all-files-starting-with-a-certain-string-in-linux
+ - To remove files starting with "_name_", run ```find  . -name 'name*' -exec rm {} \;``` https://superuser.com/questions/482435/how-to-remove-all-files-starting-with-a-certain-string-in-linux
